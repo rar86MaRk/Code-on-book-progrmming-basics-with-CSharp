@@ -23,7 +23,7 @@ Chapters/
 ├── Chapter_5.1/ # Loops
 ├── Chapter_5.2/ # Loops - Exam Problems
 ├── Chapter_6.1/ # Nested Loops
-├── Chapter_6.1/ # Nested Loops - Exam Problems
+├── Chapter_6.2/ # Nested Loops - Exam Problems
 └── ...
 ```
 
@@ -48,7 +48,7 @@ dotnet run
 | 5.1. Loops | 12 | Solved |
 | 5.2. Loops - Exam Problems | 6 | Solved |
 | 6.1. Nested Loops | 10 | Solved |
-| 6.1. Nested Loops - Exam Problems | 2 | In Progress |
+| 6.2. Nested Loops - Exam Problems | 2 | In Progress |
 | ... | ... | ... |
 
 ---
