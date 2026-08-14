@@ -23,6 +23,7 @@ Chapters/
 ├── Chapter_5.1/ # Loops
 ├── Chapter_5.2/ # Loops - Exam Problems
 ├── Chapter_6.1/ # Nested Loops
+├── Chapter_6.1/ # Nested Loops - Exam Problems
 └── ...
 ```
 
@@ -47,6 +48,7 @@ dotnet run
 | 5.1. Loops | 12 | Solved |
 | 5.2. Loops - Exam Problems | 6 | Solved |
 | 6.1. Nested Loops | 10 | Solved |
+| 6.1. Nested Loops - Exam Problems | 2 | In Progress |
 | ... | ... | ... |
 
 ---
@@ -95,6 +97,7 @@ Chapters/
 ├── Chapter_5.1/          # Циклы
 ├── Chapter_5.2/          # Циклы - экзаменационные задачи
 ├── Chapter_6.1/          # Вложеные циклы 
+├── Chapter_6.2/ # Вложенные циклы - экзаменационные задачи
 └── ...
 ```
 
@@ -119,6 +122,7 @@ dotnet run
 | 5.1. Циклы | 12 | Решено |
 | 5.2. Циклы - экзаменационные задачи | 6 | Решено |
 | 6.1. Вложенные циклы | 10 | Решено |
+| 6.2. Вложенные циклы - экзаменационные задачи | 2 | В процессе |
 | ... | ... | ... |
 
 ---
