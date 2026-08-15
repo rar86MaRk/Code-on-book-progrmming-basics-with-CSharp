@@ -67,7 +67,11 @@ dotnet run
 
 ---
 
+<<<<<<< HEAD
  The repository is periodically updated with new solutions and useful materials.
+=======
+The repository is periodically updated with new solutions and useful materials.
+>>>>>>> 818141d86b58cd592330733b1e7578379b92a6c8
 
 ---
 
