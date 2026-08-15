@@ -19,7 +19,10 @@
 
 ```
 Chapters/
-├── Chapter_4.2/ # More Complex Conditionals
+├── Chapter_3.1/ # Simple conditions
+├── Chapter_3.2/ # Simple conditions - Exam Problems
+├── Chapter_4.1/ # More challenging conditions
+├── Chapter_4.2/ # More challenging conditions - Exam Problems
 ├── Chapter_5.1/ # Loops
 ├── Chapter_5.2/ # Loops - Exam Problems
 ├── Chapter_6.1/ # Nested Loops
@@ -44,7 +47,10 @@ dotnet run
 
 | Chapter | Problems Solved | Status |
 |-------|-------------|--------|
-| 4.2. Advanced Conditionals | 2 | In Progress |
+| 3.1. Simple conditions | 9 | Solved |
+| 3.2. Simple conditions - Exam Problems | 5 | Solved |
+| 4.1. More challenging conditions | 12 | Solved |
+| 4.2. More challenging conditions - Exam Problems | 5 | Solved |
 | 5.1. Loops | 12 | Solved |
 | 5.2. Loops - Exam Problems | 6 | Solved |
 | 6.1. Nested Loops | 10 | Solved |
@@ -66,13 +72,7 @@ dotnet run
 - Telegram: [@rarmark86](https://t.me/@rarmark86)
 
 ---
-
-<<<<<<< HEAD
- The repository is periodically updated with new solutions and useful materials.
-=======
 The repository is periodically updated with new solutions and useful materials.
->>>>>>> 818141d86b58cd592330733b1e7578379b92a6c8
-
 ---
 
 
@@ -97,7 +97,10 @@ The repository is periodically updated with new solutions and useful materials.
 
 ```
 Chapters/
-├── Chapter_4.2/          # Более сложные условия
+├── Chapter_3.1/ # Простые условия
+├── Chapter_3.2/ # Простые условия - экзаменационные задачи
+├── Chapter_4.1/ # Более сложные условия
+├── Chapter_4.2/          # Более сложные условия - экзаменационные задачи
 ├── Chapter_5.1/          # Циклы
 ├── Chapter_5.2/          # Циклы - экзаменационные задачи
 ├── Chapter_6.1/          # Вложеные циклы 
@@ -122,7 +125,10 @@ dotnet run
 
 | Глава | Задач решено | Статус |
 |-------|-------------|--------|
-| 4.2. Более сложные условия | 2 | В процессе |
+| 3.1. Простые условия | 9 | Решено |
+| 3.2. Простые условия - экзаменационные задачи | 5 | Решено |
+| 4.1. Более сложные условия | 12 | Решено |
+| 4.2. Более сложные условия - экзаменационные задачи | 5 | Решено |
 | 5.1. Циклы | 12 | Решено |
 | 5.2. Циклы - экзаменационные задачи | 6 | Решено |
 | 6.1. Вложенные циклы | 10 | Решено |

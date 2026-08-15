@@ -1,50 +1,42 @@
-﻿decimal budzhet = decimal.Parse(Console.ReadLine());
-string type = Console.ReadLine();
-var value_people = int.Parse(Console.ReadLine());
-decimal costTransfer = 0;
+﻿int ekzamen_hour = int.Parse(Console.ReadLine());
+int ekzamen_min = int.Parse(Console.ReadLine());
+int ych_hour = int.Parse(Console.ReadLine());
+int ych_min = int.Parse(Console.ReadLine());
 
-if (value_people <= 4)
-{
-    costTransfer = 0.75M * budzhet;
-}
-else if (value_people >= 5 && value_people <= 9)
-{
-    costTransfer = 0.60M * budzhet;
-}
-else if (value_people >= 10 && value_people <= 24)
-{
-    costTransfer = 0.50M * budzhet;
-}
-else if (value_people >= 25 && value_people <= 49)
-{
-    costTransfer = 0.40M * budzhet;
-}
-else if (value_people >= 50)
-{
-    costTransfer = 0.25M * budzhet;
-}
+int time_ekz = (ekzamen_hour * 60) + ekzamen_min;
+int ych_time = (ych_hour * 60) + ych_min;
 
-budzhet = budzhet - costTransfer;
-decimal costTicket = 0;
-
-switch (type)
+if (time_ekz == ych_time)
 {
-    case "VIP":
-        costTicket = value_people * 499.99M;
-        break;
-    case "Normal":
-        costTicket = value_people * 249.99M;
-        break;
-    default:
-        costTicket = value_people * 249.99M;
-        break;
+    Console.WriteLine("Вовремя");
 }
-
-if (costTicket <= budzhet)
+else if (time_ekz >= ych_time && (time_ekz - 30) <= ych_time)
 {
-    Console.WriteLine("Хватает, у вас осталось " + (budzhet - costTicket) + " лева.");
+    Console.WriteLine("Вовремя, за " + (time_ekz - ych_time) + " до начала.");
 }
-else if (costTicket > budzhet)
+else if ((time_ekz - ych_time) >= 30)
 {
-    Console.WriteLine("Нехватает, ещй нужно "+(costTicket - budzhet)+" лева.");
+    if ((time_ekz - ych_time) - (((time_ekz - ych_time) / 60) * 60) > 9)
+    {
+        Console.WriteLine("Рано,за " + ((time_ekz - ych_time) / 60) + ":" + ((time_ekz - ych_time) - (((time_ekz - ych_time) / 60) * 60)) + " до начала.");
+    }
+    else if ((time_ekz - ych_time) - (((time_ekz - ych_time) / 60) * 60) <= 9)
+    {
+        Console.WriteLine("Рано,за " + ((time_ekz - ych_time) / 60) + ":0" + ((time_ekz - ych_time) - (((time_ekz - ych_time) / 60) * 60)) + " до начала.");
+    }
+}
+else if ((ych_time - time_ekz) < 60 && (ych_time - time_ekz) != 0)
+{
+    Console.WriteLine("Опоздал," + (ych_time - time_ekz) + " после начала.");
+}
+else if ((ych_time - time_ekz) > 60)
+{
+    if ((ych_time - time_ekz) - (((ych_time - time_ekz) / 60) * 60) > 9)
+    {
+        Console.WriteLine("Опоздал, " + ((ych_time - time_ekz) / 60) + ":" + ((ych_time - time_ekz) - (((ych_time - time_ekz) / 60) * 60)) + " после начала.");
+    }
+    else if ((ych_time - time_ekz) - (((ych_time - time_ekz) / 60) * 60) <= 9)
+    {
+        Console.WriteLine("Опоздал, " + ((ych_time - time_ekz) / 60) + ":0" + ((ych_time - time_ekz) - (((ych_time - time_ekz) / 60) * 60)) + " после начала.");
+    }
 }

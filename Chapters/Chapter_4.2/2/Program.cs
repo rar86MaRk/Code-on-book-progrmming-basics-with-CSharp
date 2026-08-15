@@ -1,65 +1,46 @@
-﻿string mes = Console.ReadLine().ToLower();
-int day = int.Parse(Console.ReadLine());
+﻿var budzhet = double.Parse(Console.ReadLine());
+var sezon = Console.ReadLine().ToLower();
 
-decimal studioPrice = 0.0M;
-decimal apartamentPrice = 0.0M;
-
-decimal studioRent = 0.0M;
-decimal apartamentRent = 0.0M;
-
-
-switch (mes)
+if (budzhet <= 100)
 {
-    case "may":
-    case "october":
-        studioPrice = 50.00M;
-        apartamentPrice = 65.00M;
-
-        studioRent = studioPrice * day;
-        apartamentRent = apartamentPrice * day;
-
-        if (day > 14)
-        {
-            studioRent *= 0.70M;
-            apartamentRent *= 0.90M;
-        }
-        else if (day > 7)
-        {
-            studioRent = studioRent * 0.95M;
-        }
-    
-
-        break;
-    case "june":
-    case "september":
-        studioPrice = 75.20M;
-        apartamentPrice = 68.70M;
-
-        studioRent = studioPrice * day;
-        apartamentRent = apartamentPrice * day;
-
-        if (day > 14)
-        {
-            studioRent *= 0.80M;
-            apartamentRent *= 0.90M;
-        }
-
-        break;
-    case "july":
-    case "august":
-        studioPrice = 76.00M;
-        apartamentPrice = 77.00M;
-
-        studioRent = studioPrice * day;
-        apartamentRent = apartamentPrice * day;
-
-        if (day > 14)
-        {
-            apartamentRent *= 0.90M;
-        }
-
-        break;
+    if (sezon == "leto")
+    {
+        Console.WriteLine("Где-то в Болгарий.");
+        Console.WriteLine("Кампинг - "+Math.Round((budzhet * 0.3),2) + " BGN");
+    }
+    else if (sezon == "zima")
+    {
+        Console.WriteLine("Где-то в Болгарий.");
+        Console.WriteLine("Отель - "+Math.Round((budzhet * 0.7),2) + " BGN");
+    }
+    else
+    {
+        Console.WriteLine("Error-1");
+    }
 }
+else if (budzhet <= 1000 && budzhet > 100)
+{
+    if (sezon == "leto")
+    {
+        Console.WriteLine("Где-то на Балканах.");
+        Console.WriteLine("Кампинг - "+Math.Round((budzhet * 0.4),2) + " BGN");`
+    }
+    else if (sezon == "zima")
+    {
+        Console.WriteLine("Где-то в Балканах.");
+        Console.WriteLine("Отель - "+Math.Round((budzhet * 0.8),2) + " BGN");
+    }
+    else
+    {
+        Console.WriteLine("Error-1");
+    }
+}
+else if (budzhet > 1000)
+{
+    Console.WriteLine("Где-то в Европе.");
+    Console.WriteLine("Отель - "+Math.Round((budzhet * 0.9),2) + " BGN");
+}
+else
+{
 
-Console.WriteLine("Аппартаменты: "+ decimal.Round(apartamentRent,2) +" lv");
-Console.WriteLine("Студия: "+ decimal.Round(studioRent,2) +" lv");
+}
