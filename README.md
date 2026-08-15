@@ -67,7 +67,7 @@ dotnet run
 
 ---
 
-The repository is periodically updated with new solutions and useful materials.
+ The repository is periodically updated with new solutions and useful materials.
 
 ---
 
