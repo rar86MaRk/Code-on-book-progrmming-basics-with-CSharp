@@ -1,0 +1,260 @@
+# ============================================
+# .gitignore для C# / .NET проектов
+# ============================================
+
+# ----------------------------
+# Visual Studio
+# ----------------------------
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.sln.ide
+*.sln.GhostDoc.xml
+*.sln.ide
+*.sln.license
+*.sln.old
+*.sln.pdb
+*.sln.vsidx
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# ----------------------------
+# Build results
+# ----------------------------
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# ----------------------------
+# Compiled files
+# ----------------------------
+*.exe
+*.dll
+*.so
+*.dylib
+*.pdb
+*.mdb
+*.pidb
+*.cache
+*.nupkg
+*.nuspec
+*.snk
+
+# ----------------------------
+# C# specific
+# ----------------------------
+*.csproj.user
+*.vbproj.user
+*.fsproj.user
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+*.pfx
+*.publishsettings
+*.vshost.exe
+*.vshost.exe.manifest
+*.vshost.exe.config
+*.vsp
+*.vspx
+*.vspscc
+*.vssscc
+*.vsmdi
+*.testsettings
+*.TRX
+*.trx
+*.loadtest
+*.webtest
+*.wtt
+*.vsmacros
+*.mdf
+*.ldf
+*.sdf
+*.psess
+*.vmx
+
+# ----------------------------
+# NuGet
+# ----------------------------
+packages/
+*.nupkg
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.assets.json
+
+# ----------------------------
+# Backup files
+# ----------------------------
+*.bak
+*.old
+*.tmp
+*.temp
+*.~*
+*~
+*.swp
+*.swo
+*.orig
+
+# ----------------------------
+# Logs and databases
+# ----------------------------
+*.log
+*.db
+*.sqlite
+*.sqlite3
+
+# ----------------------------
+# OS generated files
+# ----------------------------
+Thumbs.db
+*.DS_Store
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+*.tmp
+*.lnk
+*.ini
+*.ini.*
+*.cfg
+*.config.user
+
+# ----------------------------
+# Archives
+# ----------------------------
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.bz2
+*.iso
+
+# ----------------------------
+# Media files (for source control)
+# ----------------------------
+*.mp3
+*.mp4
+*.avi
+*.mov
+*.wav
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.ico
+
+# ----------------------------
+# Documents (for source control)
+# ----------------------------
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.mdb
+*.accdb
+
+# ----------------------------
+# User-specific files
+# ----------------------------
+*.user
+*.userprefs
+*.sln.ide
+*.psess
+*.vsp
+*.vspx
+*.pdb
+*.mdb
+*.pidb
+*.cache
+*.ncb
+*.opensdf
+*.sdf
+*.suo
+*.user
+
+# ----------------------------
+# Test results
+# ----------------------------
+TestResult.xml
+TestResults/
+*.coverage
+*.coveragexml
+*.trx
+*.testresult
+
+# ----------------------------
+# Docker
+# ----------------------------
+.dockerignore
+docker-compose.override.yml
+Dockerfile.*
+
+# ----------------------------
+# Environment variables
+# ----------------------------
+.env
+.env.local
+.env.*.local
+secrets.json
+appsettings.Development.json
+appsettings.Local.json
+
+# ----------------------------
+# IDE specific
+# ----------------------------
+.idea/
+*.iml
+.idea_modules/
+*.sln.ide
+
+# ----------------------------
+# Other
+# ----------------------------
+*.pubxml.user
+*.publishproj.user
+*.nuget.props
+*.nuget.targets
+*.sln.dgml
+*.psess
+*.vsp
+*.vspx
+*.pidb
+*.vsp
+*.vspx
+*.pdb
+*.mdb
+*.pidb
+*.cache
+*.ncb
+*.opensdf
+*.sdf
+*.suo
+*.user
+*.h.h
+*.cpp.h
+*.c.h
+*.cs.h
+*.fs.h
+*.vb.h
+*.ss
+*.trx
+*.swp
+*.swo
+*.orig
